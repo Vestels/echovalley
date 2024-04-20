@@ -1,0 +1,154 @@
+$green: #02c39a;
+$darkergreen: #015f4a;
+$dark: #3c3c3c;
+$lightgrey: #cccccc;
+$red: #920000;
+$card-bg: #071013;
+
+@mixin noborder {
+    border: none !important;
+    outline: none !important;
+}
+
+@mixin size {
+    height: 30px;
+    width: 50px;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+
+
+.sticky {
+    position: sticky;
+    top: 5%;
+}
+
+.socialimg {
+    width: 1.6em;
+}
+
+.socialimg:hover {
+    scale: 1.1;
+}
+
+nav a:hover,
+li a:hover,
+#carouselExampleAutoplaying button:hover,
+.input-group-text {
+    background-color: $green !important;
+    color: white !important;
+}
+
+button:hover,
+button::after,
+button:focus,
+button:active {
+    @include noborder();
+}
+
+a, 
+hr,
+.fs-1,
+.fs-3,
+.fs-5,
+.btn-outline-success {
+    color: $green;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-success,
+.btn-danger, 
+.input-group-text,
+.pcs {
+    @include noborder();
+}
+
+.btn {
+    @include noborder();
+}
+
+#carouselExampleAutoplaying {
+    max-height: 400px !important;
+}
+
+.carousel-inner img,
+.card img {
+    max-height: 380px !important;
+    object-fit:cover;
+}
+
+.btn-secondary:hover {
+    background-color: $dark !important;
+}
+
+.btn-primary:hover, 
+.btn-success:hover {
+    background-color: $darkergreen !important;
+}
+
+.btn-primary {
+    background-color: $green;
+}
+
+.btn-danger:hover {
+    background-color: $red!important;
+}
+
+::placeholder{
+    color: $lightgrey !important;
+}
+
+input[type=text]:focus,
+input[type=tel]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+textarea:focus {
+    border: 3px solid $green !important;
+}
+
+.card {
+    background-color: $card-bg !important;
+    color: white !important;
+    min-height: 550px !important;
+}
+
+.card:hover {
+    scale: 1.05;
+    transition-duration: 1s;
+}
+
+.card:not(:hover) {
+    scale: 1;
+    transition-duration: 1s;
+}
+
+.pcs,
+.pcs:focus {
+    max-width: 50px;
+    @include noborder();
+}
+
+input[type="checkbox"]:checked {
+    background-color: $green !important;
+    @include noborder();
+    @include size();
+}
+
+input[type="checkbox"]:not(:checked) {
+    background-color: white !important;
+    @include noborder();
+    @include size();
+}
+
+.undcon {
+    color: $green;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+}

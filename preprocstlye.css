@@ -1,0 +1,146 @@
+body {
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+
+.sticky {
+  position: sticky;
+  top: 5%;
+}
+
+.socialimg {
+  width: 1.6em;
+}
+
+.socialimg:hover {
+  scale: 1.1;
+}
+
+nav a:hover,
+li a:hover,
+#carouselExampleAutoplaying button:hover,
+.input-group-text {
+  background-color: #02c39a !important;
+  color: white !important;
+}
+
+button:hover,
+button::after,
+button:focus,
+button:active {
+  border: none !important;
+  outline: none !important;
+}
+
+a,
+hr,
+.fs-1,
+.fs-3,
+.fs-5,
+.btn-outline-success {
+  color: #02c39a;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-success,
+.btn-danger,
+.input-group-text,
+.pcs {
+  border: none !important;
+  outline: none !important;
+}
+
+.btn {
+  border: none !important;
+  outline: none !important;
+}
+
+#carouselExampleAutoplaying {
+  max-height: 400px !important;
+}
+
+.carousel-inner img,
+.card img {
+  max-height: 380px !important;
+  object-fit: cover;
+}
+
+.btn-secondary:hover {
+  background-color: #3c3c3c !important;
+}
+
+.btn-primary:hover,
+.btn-success:hover {
+  background-color: #015f4a !important;
+}
+
+.btn-primary {
+  background-color: #02c39a;
+}
+
+.btn-danger:hover {
+  background-color: #920000 !important;
+}
+
+::placeholder {
+  color: #cccccc !important;
+}
+
+input[type=text]:focus,
+input[type=tel]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+textarea:focus {
+  border: 3px solid #02c39a !important;
+}
+
+.card {
+  background-color: #071013 !important;
+  color: white !important;
+  min-height: 550px !important;
+}
+
+.card:hover {
+  scale: 1.05;
+  transition-duration: 1s;
+}
+
+.card:not(:hover) {
+  scale: 1;
+  transition-duration: 1s;
+}
+
+.pcs,
+.pcs:focus {
+  max-width: 50px;
+  border: none !important;
+  outline: none !important;
+}
+
+input[type=checkbox]:checked {
+  background-color: #02c39a !important;
+  border: none !important;
+  outline: none !important;
+  height: 30px;
+  width: 50px;
+}
+
+input[type=checkbox]:not(:checked) {
+  background-color: white !important;
+  border: none !important;
+  outline: none !important;
+  height: 30px;
+  width: 50px;
+}
+
+.undcon {
+  color: #02c39a;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: 500;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/*# sourceMappingURL=preprocstlye.css.map */
