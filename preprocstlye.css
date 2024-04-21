@@ -1,14 +1,11 @@
-html {
-  background-color: #020d13 !important;
-}
-
 body {
-  background-color: #020d13 !important;
+  background-color: #020d13;
   background-image: url(bg.jpg);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
+  min-height: 100vh;
 }
 
 .sticky {

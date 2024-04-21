@@ -3,7 +3,7 @@ $darkergreen: #015f4a;
 $dark: #3c3c3c;
 $lightgrey: #cccccc;
 $red: #920000;
-$card-bg: #071013;
+$bodycolor: #020d13;
 // 071013
 
 @mixin noborder {
@@ -17,7 +17,7 @@ $card-bg: #071013;
 }
 
 body {
-    background-color: $green;
+    background-color: $bodycolor;
     background-image: url(bg.jpg);
     background-repeat: no-repeat;
     background-position: top;
