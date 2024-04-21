@@ -16,6 +16,10 @@ $bodycolor: #020d13;
     width: 50px;
 }
 
+html {
+    background-color: $bodycolor;
+}
+
 body {
     background-color: $bodycolor;
     background-image: url(bg.jpg);
