@@ -16,12 +16,8 @@ $card-bg: #071013;
     width: 50px;
 }
 
-.scroll {
-    // max-height: 100px;
-    overflow-y: auto;
-}
-
 body {
+    background-color: $green;
     background-image: url(bg.jpg);
     background-repeat: no-repeat;
     background-position: top;
