@@ -23,7 +23,13 @@ body {
     background-position: top left;
     background-size: 50%;
     min-height: 100vh;
+}
 
+@media (max-width: 768px) {
+    body {
+        background-size: 100% auto;
+    }
+    
 }
 
 .sticky {

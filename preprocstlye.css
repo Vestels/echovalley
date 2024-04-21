@@ -7,6 +7,11 @@ body {
   min-height: 100vh;
 }
 
+@media (max-width: 768px) {
+  body {
+    background-size: 100% auto;
+  }
+}
 .sticky {
   position: sticky;
   top: 5%;
