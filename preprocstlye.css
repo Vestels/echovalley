@@ -1,3 +1,7 @@
+html {
+  background-color: #020d13 !important;
+}
+
 body {
   background-image: url(bg.jpg);
   background-repeat: no-repeat;
