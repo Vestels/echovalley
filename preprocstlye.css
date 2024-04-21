@@ -1,8 +1,5 @@
-.scroll {
-  overflow-y: auto;
-}
-
 body {
+  background-color: #02c39a;
   background-image: url(bg.jpg);
   background-repeat: no-repeat;
   background-position: top;
