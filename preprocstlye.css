@@ -2,8 +2,8 @@ body {
   background-color: #020d13 !important;
   background-image: url(bg.jpg);
   background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 100% auto;
+  background-position: top left;
+  background-size: 50%;
   min-height: 100vh;
 }
 
