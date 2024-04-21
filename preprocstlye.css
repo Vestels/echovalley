@@ -2,7 +2,7 @@ body {
   background-color: #020d13 !important;
   background-image: url(bg.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% auto !important;
   background-attachment: fixed;
   min-height: 100vh;
 }
