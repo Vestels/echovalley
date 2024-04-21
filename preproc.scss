@@ -18,11 +18,11 @@ $bodycolor: #020d13;
 
 body {
     background-color: $bodycolor !important;
-    // background-image: url(bg.jpg);
+    background-image: url(bg.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: cover;
-    background-attachment: fixed;
+    // background-size: cover;
+    // background-attachment: fixed;
     min-height: 100vh;
 }
 
