@@ -1,5 +1,8 @@
-html {
-  background-color: #020d13 !important;
+html,
+body,
+nav {
+  border: none !important;
+  outline: none !important;
 }
 
 body {

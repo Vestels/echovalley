@@ -16,8 +16,10 @@ $bodycolor: #020d13;
     width: 50px;
 }
 
-html {
-    background-color: $bodycolor !important;
+html,
+body,
+nav {
+    @include noborder();
 }
 
 body {
