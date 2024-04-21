@@ -18,17 +18,15 @@ $bodycolor: #020d13;
 
 body {
     background-color: $bodycolor !important;
-    background-image: url(bg.jpg);
+    background: url(bg.jpg) top left, url(bg2.jpg) bottom left;
     background-repeat: no-repeat;
-    background-position: top left;
     background-size: 50%;
     min-height: 100vh;
 }
 
 @media (max-width: 767px) {
     body {
-        background-size: 100% auto !important;
-        background-attachment: fixed !important;
+       background-size: 100% auto;
     }
     
 }
