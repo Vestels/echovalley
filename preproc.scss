@@ -25,9 +25,10 @@ body {
     min-height: 100vh;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     body {
-        background-size: 100% auto;
+        background-size: 100% auto !important;
+        background-attachment: fixed !important;
     }
     
 }
