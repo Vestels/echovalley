@@ -17,11 +17,11 @@ $bodycolor: #020d13;
 }
 
 html {
-    background-color: $bodycolor;
+    background-color: $bodycolor !important;
 }
 
 body {
-    background-color: $bodycolor;
+    background-color: $bodycolor !important;
     background-image: url(bg.jpg);
     background-repeat: no-repeat;
     background-position: top;

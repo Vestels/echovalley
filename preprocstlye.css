@@ -1,9 +1,9 @@
 html {
-  background-color: #020d13;
+  background-color: #020d13 !important;
 }
 
 body {
-  background-color: #020d13;
+  background-color: #020d13 !important;
   background-image: url(bg.jpg);
   background-repeat: no-repeat;
   background-position: top;
