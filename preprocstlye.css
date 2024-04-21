@@ -1,7 +1,14 @@
+.scroll {
+  overflow-y: auto;
+}
+
 body {
+  background-image: url(bg.jpg);
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: top;
   background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
 .sticky {
@@ -63,6 +70,7 @@ hr,
 
 .carousel-inner img,
 .card img {
+  border-radius: 10 10 0 0;
   max-height: 380px !important;
   object-fit: cover;
 }
@@ -97,9 +105,11 @@ textarea:focus {
 }
 
 .card {
-  background-color: #071013 !important;
+  background-color: transparent !important;
   color: white !important;
   min-height: 550px !important;
+  border: none !important;
+  outline: none !important;
 }
 
 .card:hover {
@@ -141,6 +151,13 @@ input[type=checkbox]:not(:checked) {
   letter-spacing: 0.3rem;
   font-weight: 500;
   font-family: "Courier New", Courier, monospace;
+}
+
+#error button,
+#success button {
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
 }
 
 /*# sourceMappingURL=preprocstlye.css.map */

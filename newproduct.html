@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="preprocstlye.css">
     <link rel="icon" href="logo.png">
 </head>
-<body class="p-3 mb-2 bg-black text-white"> 
+<body class="p-3 mb-2 text-white"> 
   <header>
     <!-- NAVIGATION -->
-      <nav class="navbar d-flex navbar-expand-lg navbar-dark bg-black justify-content-between">
+      <nav class="navbar d-flex navbar-expand-lg navbar-dark justify-content-between">
       <div class="container-fluid gap-3 d-flex flex-row align-items-center">
         <button class="toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -43,7 +43,7 @@
     
     
       <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
-        <div class="bg-black p-4 mt-3">
+        <div class="p-4 mt-3">
           <ul class="navbar-nav justify-content-lg-end flex-grow-1 pe-3 gap-3">
             <li class="nav-item">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
@@ -70,6 +70,22 @@
 <!-- CONTENT -->
 
 <div class="container col-lg-8">
+
+  <div id="error" style="display:none;" class="alert alert-warning alert-dismissible fade show align-items-center justify-content-between p-3 mb-5" role="alert">
+    <div>
+    <strong>Attention!</strong> The product is not listed!
+    </div>
+    <button type="button" onclick="document.getElementById('error').style.display='none'" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  
+  <div id="success" style="display:none;" class="alert alert-success align-items-center justify-content-between p-3 mb-5" role="alert">
+    The product is successfully listed!
+    <button type="button" onclick="document.getElementById('success').style.display='none'" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
 
     <div class="input-group mb-4">
         <span class="input-group-text d-flex justify-content-center align-items-center px-4" id="basic-addon1">Product name</span>
@@ -101,12 +117,15 @@
         <label class="form-check-label" for="flexSwitchCheckChecked">Product available</label>
       </div>
       
-<div class="product d-block mt-5 gap-3 d-sm-flex">
-      <a href="./error.html" class="d-block btn btn-danger px-5 mb-3" id="liveAlertBtn">Cancel</a>
-      <a href="./success.html" class="d-block btn btn-success px-5 mb-3" id="liveAlertBtn">List item</a>
-    </div>
+<div class="product d-block mt-5 gap-3 d-sm-flex"></div>
 
-  </div>
+<div class="d-flex gap-3">
+    <a href="#" class="d-flex btn btn-danger px-4" id="liveAlertBtn"
+    onclick="document.getElementById('error').style.display='flex'">Cancel</a>
+    <a href="#" class="d-flex btn btn-success px-4" id="liveAlertBtn"
+    onclick="document.getElementById('success').style.display='flex'">List item</a>
+</div>
+</div>
 <!-- FOOTER -->
 
 <div class="container">

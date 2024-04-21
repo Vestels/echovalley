@@ -4,6 +4,7 @@ $dark: #3c3c3c;
 $lightgrey: #cccccc;
 $red: #920000;
 $card-bg: #071013;
+// 071013
 
 @mixin noborder {
     border: none !important;
@@ -15,12 +16,19 @@ $card-bg: #071013;
     width: 50px;
 }
 
-body {
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: cover;
+.scroll {
+    // max-height: 100px;
+    overflow-y: auto;
 }
 
+body {
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
 
 .sticky {
     position: sticky;
@@ -78,6 +86,7 @@ hr,
 
 .carousel-inner img,
 .card img {
+    border-radius: 10 10 0 0;
     max-height: 380px !important;
     object-fit:cover;
 }
@@ -112,9 +121,10 @@ textarea:focus {
 }
 
 .card {
-    background-color: $card-bg !important;
+    background-color:transparent!important;
     color: white !important;
     min-height: 550px !important;
+    @include noborder();
 }
 
 .card:hover {
@@ -151,4 +161,10 @@ input[type="checkbox"]:not(:checked) {
     letter-spacing: 0.3rem;
     font-weight: 500;
     font-family: 'Courier New', Courier, monospace;
+}
+
+#error button,
+#success button {
+    background-color: transparent !important;
+    @include noborder();
 }
